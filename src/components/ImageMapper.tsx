@@ -78,7 +78,7 @@ export const ImageMapper: FC<ImageMapperProps> = ({
 
   useEffect(() => {
     initCanvas()
-  }, [])
+  }, [src, map, fillColor, strokeColor, lineWidth, width, height, active, imgWidth])
 
   const drawrect = (
     coords: number[],
@@ -128,7 +128,6 @@ export const ImageMapper: FC<ImageMapperProps> = ({
     )
     const ctx = canvas.current?.getContext('2d')
     if (!ctx) return
-    console.log(fillColor)
     ctx.fillStyle = fillColor
     ctx.beginPath()
     ctx.lineWidth = lineWidth
