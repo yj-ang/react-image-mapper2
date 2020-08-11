@@ -1,10 +1,18 @@
 {
   "name": "react-image-mapper2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Component to highlight interactive zones in images",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
+  "homepage": "https://github.com/yj-ang/react-image-mapper2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yj-ang/react-image-mapper2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yj-ang/react-image-mapper2/issues"
+  },
   "scripts": {
     "build": "rollup -c",
     "lint": "standard",
