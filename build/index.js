@@ -55,7 +55,7 @@ var ImageMapper = function (_a) {
     var canvas = React.useRef(null);
     React.useEffect(function () {
         initCanvas();
-    }, []);
+    }, [src, map, fillColor, strokeColor, lineWidth, width, height, active, imgWidth]);
     var drawrect = function (coords, fillColor, lineWidth, strokeColor) {
         var _a;
         var left = coords[0], top = coords[1], right = coords[2], bot = coords[3];
@@ -90,7 +90,6 @@ var ImageMapper = function (_a) {
         var ctx = (_a = canvas.current) === null || _a === void 0 ? void 0 : _a.getContext('2d');
         if (!ctx)
             return;
-        console.log(fillColor);
         ctx.fillStyle = fillColor;
         ctx.beginPath();
         ctx.lineWidth = lineWidth;
